@@ -1,7 +1,7 @@
 {
-    "name": "anomaly/paypal_pro_gateway-extension",
+    "name": "anomaly/paypal_express_gateway-extension",
     "type": "streams-addon",
-    "description": "A PayPal Pro gateway extension for the Payments module.",
+    "description": "A PayPal Express gateway extension for the Payments module.",
     "keywords": [
         "streams-addon",
         "payments",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Anomaly\\PaypalProGatewayExtension\\": "src/",
+            "Anomaly\\PaypalExpressGatewayExtension\\": "src/",
             "Omnipay\\PayPal\\": "vendor/omnipay/paypal/src/"
         }
     },

@@ -1,19 +1,19 @@
-<?php namespace Anomaly\PaypalProGatewayExtension;
+<?php namespace Anomaly\PaypalExpressGatewayExtension;
 
 use Anomaly\PaymentsModule\Gateway\Contract\GatewayInterface;
 use Anomaly\PaymentsModule\Gateway\GatewayExtension;
-use Anomaly\PaypalProGatewayExtension\Command\MakePaypalProGateway;
+use Anomaly\PaypalExpressGatewayExtension\Command\MakePaypalExpressGateway;
 use Omnipay\Common\AbstractGateway;
 
 /**
- * Class PaypalProGatewayExtension
+ * Class PaypalExpressGatewayExtension
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\PaypalProGatewayExtension
+ * @package       Anomaly\PaypalExpressGatewayExtension
  */
-class PaypalProGatewayExtension extends GatewayExtension
+class PaypalExpressGatewayExtension extends GatewayExtension
 {
 
     /**
@@ -22,7 +22,7 @@ class PaypalProGatewayExtension extends GatewayExtension
      *
      * @var null|string
      */
-    protected $provides = 'anomaly.module.payments::gateway.paypal_pro';
+    protected $provides = 'anomaly.module.payments::gateway.paypal_express';
 
     /**
      * Return an Omnipay gateway.
@@ -33,6 +33,6 @@ class PaypalProGatewayExtension extends GatewayExtension
      */
     public function make(GatewayInterface $gateway)
     {
-        return $this->dispatch(new MakePaypalProGateway($gateway));
+        return $this->dispatch(new MakePaypalExpressGateway($gateway));
     }
 }

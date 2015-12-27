@@ -1,3 +1,3 @@
-# PayPal Pro Gateway Extension
+# PayPal Express Gateway Extension
 
-A PayPal Pro gateway extension for the Payments module.
+A PayPal Express gateway extension for the Payments module.
