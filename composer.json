@@ -1,0 +1,33 @@
+{
+    "name": "anomaly/paypal_pro_gateway-extension",
+    "type": "streams-addon",
+    "description": "A PayPal Pro gateway extension for the Payments module.",
+    "keywords": [
+        "streams-addon",
+        "payments",
+        "pyrocms",
+        "laravel"
+    ],
+    "homepage": "http://anomaly.is/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AnomalyLabs, Inc.",
+            "email": "hello@anomaly.is",
+            "homepage": "http://anomaly.is/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "support@anomaly.is"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\PaypalProGatewayExtension\\": "src/",
+            "Omnipay\\PayPal\\": "vendor/omnipay/paypal/src/"
+        }
+    },
+    "require": {
+        "omnipay/paypal": "^2.5"
+    }
+}
